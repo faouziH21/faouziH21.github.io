@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using OpenLayers with Vite</title>
+  <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
+  
+
+  <header>
+    <div class = "cap">
+    <b class="logo" href="+">
+      <h1>FoodMap</h1>
+    </b>
+      <select name="field" id="field"></select>
+    </div>
+    <button type="button" id="NumbersButton"> show/remove numbers </button>
+    <ul class="nav_links">
+      <button><a id="about" href="#">About</a></button>
+    </ul>
+    <a class="cta" id="contact" href="#"><button>Contact</button></a>
+    <button type="button" id= "Test"> test </button>
+  </header>
+
+  <script type="module" crossorigin src="/assets/index.054d0912.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.1b09fe3d.js">
+  <link rel="stylesheet" href="/assets/index.98755694.css">
+</head>
+
+<body>
+  <div class = "popup center">
+  <div class ="icon">
+    <i class = "fa fa-check"></i>
+  </div>
+  <div class = "titleAbout">
+    About
+  </div>
+  <div class = "description">
+    Select a product to find the its production numbers in an interactive map!  
+  </div> 
+  <div class = "center">
+    
+    <div class = "dismiss-btn">
+      
+      <button id = "dismiss-popup-btn">
+        Dismiss
+      </button>
+    </div>
+      
+  </div>
+</div>
+  <div id="map"></div>
+  <span id="status">&nbsp;</span> 
+</body>
+
+</html>
