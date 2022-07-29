@@ -6,7 +6,7 @@
   <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Using OpenLayers with Vite</title>
+  <title>FoodMap</title>
   <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
   
 
@@ -15,45 +15,97 @@
     <b class="logo" href="+">
       <h1>FoodMap</h1>
     </b>
-      <select name="field" id="field"></select>
+      <select name="field" id="foodSelectField"></select>
     </div>
     <button type="button" id="NumbersButton"> show/remove numbers </button>
-    <ul class="nav_links">
-      <button><a id="about" href="#">About</a></button>
-    </ul>
-    <a class="cta" id="contact" href="#"><button>Contact</button></a>
-    <button type="button" id= "Test"> test </button>
+    <button type="button" id="listButton">show list</button>
+      <button><a id="help" href="#">Help</a></button>
+      <button><a  id="contactB" href="#">Contact</a></button>
   </header>
-
-  <script type="module" crossorigin src="/assets/index.054d0912.js"></script>
-  <link rel="modulepreload" href="/assets/vendor.1b09fe3d.js">
-  <link rel="stylesheet" href="/assets/index.7a2a046f.css">
+  <script type="module" crossorigin src="/assets/index.9971c80f.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.721b3488.js">
+  <link rel="stylesheet" href="/assets/index.a1fb7c13.css">
 </head>
 
 <body>
+  
+  
+  
+  
+  
+  <div class = "listPopUp center">
+    <div class = "listContent"> 
+    <div class = "simpleTable">
+      <table class = "mockTable">
+      <tr class = "mockTableRows">
+        <th>Product</th>
+        <th>Production value [t]</th> 
+      </tr>      
+        
+        <tbody class = "mockTableBody" id = "mockTableBody">
+        <tr class = "mockTableBodyRows">
+        </tr>
+        <tr class = "mockTableBodyRows">
+        </tr>
+         <tr class = "mockTableBodyRows">
+        </tr>
+        <tr class = "mockTableBodyRows">
+        </tr>
+      </tbody>
+      </table>
+    </div>
+  </div>
+    <div class = "dismissList">
+      <button id = "dismiss-List"> Dismiss</button>
+    </div>
+  </div> 
+  
+  
+
+
+  <div class = "secondPopUp center">
+    <div class = "contactTitle">Contact</div>
+    <div class = "contact">
+      Email: f.hosmani@gmail.com
+      <p> --------------------</p>
+      <p>FoodMap was done in a 1 month internship at Terrestris.</p>
+      <p> --------------------</p>
+         Data source: Food & Agriculture organization 
+      <p>Geodata source: <a href = "https://public.opendatasoft.com/explore/dataset/world-administrative-boundaries/information/">World Food Programme (UN agency)</a></p>
+    </div>
+    <div class = "dismiss-btn2">
+      <button id = "dismiss-popup-btn2">Dismiss</button>
+    </div>
+  </div>  
+  
+  
+  
   <div class = "popup center">
-  <div class ="icon">
+    <div class ="icon">
     <i class = "fa fa-check"></i>
   </div>
   <div class = "titleAbout">
-    About
+    Help
   </div>
   <div class = "description">
-    Select a product to find the its production numbers in an interactive map!  
+    Select a product to find its production numbers in an interactive map!
+    <p> --------------------</p>
+    <p> Select a product within the bar.</p>
+    <p> --------------------</p>
+    <p> The darker the color, the higher the production.</p> 
   </div> 
   <div class = "center">
     
     <div class = "dismiss-btn">
-      
       <button id = "dismiss-popup-btn">
         Dismiss
-      </button>
-    </div>
-      
+      </button>     
+    </div>   
   </div>
 </div>
-  <div id="map"></div>
-  <span id="status">&nbsp;</span> 
+<div id="map"></div>
+<span id="status">&nbsp;</span> 
 </body>
 
 </html>
+
